@@ -1,0 +1,9 @@
+pandas
+numpy
+joblib
+ipywidgets
+astropy
+tqdm
+ipython
+datetime
+notebook
