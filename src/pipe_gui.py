@@ -233,15 +233,19 @@ def show_main_gui(df_inventory):
             print(
                 "Click the link below to download."
             )
+            zip_name = Path(zip_path).name
 
             display(
                 HTML(
-                    f"""
-                    <a href="../../{zip_path}" download>
-                        Download ZIP
-                    </a>
-                    """
+                    f'<a href="/files/../home/my_workspace/pipeDown-tool/{zip_name}" download>Download ZIP</a>'
                 )
+            )
+            print(
+            "\nIf the download link is unavailable in ESA Datalabs due to policy,"
+            )
+
+            print(
+    "       navigate to the folder in the jupyter-file browser or normal file manager and download the created zip manually."
             )
 
     # Events        
