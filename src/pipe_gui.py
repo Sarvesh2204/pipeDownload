@@ -237,7 +237,7 @@ def show_main_gui(df_inventory):
             display(
                 HTML(
                     f"""
-                    <a href="./{zip_path}" download>
+                    <a href="../../{zip_path}" download>
                         Download ZIP
                     </a>
                     """

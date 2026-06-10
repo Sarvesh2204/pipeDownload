@@ -293,7 +293,7 @@ def create_visit_zip(
     ZIP_DIR = Path("/media/home/my_workspace/pipeDown-tool")
     ZIP_DIR.mkdir(parents=True, exist_ok=True)
 
-    for old_zip in Path(ZIP_DIR).glob("pipe_download_*.zip"):
+    for old_zip in ZIP_DIR.glob("pipe_download_*.zip"):
         old_zip.unlink()
 
     # -----------------------------------
@@ -311,7 +311,7 @@ def create_visit_zip(
         )
 
         zip_name = (
-            f"pipe_download_{timestamp}.zip"
+            ZIP_DIR/f"pipe_download_{timestamp}.zip"
         )
 
     # -----------------------------------
