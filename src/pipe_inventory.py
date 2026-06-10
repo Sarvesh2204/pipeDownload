@@ -290,8 +290,10 @@ def create_visit_zip(
     # -----------------------------------
     # Remove old PIPE download ZIPs
     # -----------------------------------
+    ZIP_DIR = Path("/media/home/my_workspace/pipeDown-tool")
+    ZIP_DIR.mkdir(parents=True, exist_ok=True)
 
-    for old_zip in Path(".").glob("pipe_download_*.zip"):
+    for old_zip in Path(ZIP_DIR).glob("pipe_download_*.zip"):
         old_zip.unlink()
 
     # -----------------------------------
@@ -300,7 +302,7 @@ def create_visit_zip(
 
     if len(selected_visits) == 1:
 
-        zip_name = f"{selected_visits[0]}.zip"
+        zip_name = ZIP_DIR/f"{selected_visits[0]}.zip"
 
     else:
 
