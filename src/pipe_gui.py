@@ -1,6 +1,7 @@
 import ipywidgets as widgets
 import pipe_inventory
 import pandas as pd
+from pathlib import Path
 pd.set_option("display.max_rows", None)
 from IPython.display import HTML, display
 
