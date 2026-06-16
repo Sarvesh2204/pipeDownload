@@ -1,5 +1,5 @@
 pandas
-numpy
+numpy==1.26.4
 joblib
 ipywidgets
 astropy
@@ -7,3 +7,8 @@ tqdm
 ipython
 datetime
 notebook
+ipydatagrid
+ipyfilechooser
+ipysplitpanes
+subprocess
+matplotlib
