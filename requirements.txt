@@ -4,10 +4,10 @@ joblib
 ipywidgets
 astropy
 tqdm
-ipython
+# ipython
 datetime
-notebook
+# notebook
 ipydatagrid
 ipyfilechooser
 ipysplitpanes
-matplotlib
+matplotlib==3.8.4
