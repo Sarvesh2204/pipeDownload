@@ -10,5 +10,4 @@ notebook
 ipydatagrid
 ipyfilechooser
 ipysplitpanes
-subprocess
 matplotlib
