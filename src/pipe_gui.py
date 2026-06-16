@@ -223,31 +223,82 @@ def show_main_gui(df_inventory):
 
             download_output.clear_output()
 
-            print(
-                f"{len(selected_visits)} visit(s) added to ZIP."
-            )
+    #         print(
+    #             f"{len(selected_visits)} visit(s) added to ZIP."
+    #         )
 
-            print(
-                f"ZIP file: {zip_path}"
-            )
+    #         print(
+    #             f"ZIP file: {zip_path}"
+    #         )
 
-            print(
-                "Click the link below to download."
-            )
-            zip_name = Path(zip_path).name
+    #         print(
+    #             "Click the link below to download."
+    #         )
+    #         zip_name = Path(zip_path).name
+
+    #         display(
+    #             HTML(
+    #                 f'<a href="/files/../home/my_workspace/pipeDown-tool/{zip_name}" download>Download ZIP</a>'
+    #             )
+    #         )
+    #         print(
+    #         "\nIf the download link is unavailable in ESA Datalabs due to policy,"
+    #         )
+
+    #         print(
+    # "       navigate to the folder in the jupyter-file browser or normal file manager and download the created zip manually."
+    #         )
+            from IPython.display import HTML, display
 
             display(
-                HTML(
-                    f'<a href="/files/../home/my_workspace/pipeDown-tool/{zip_name}" download>Download ZIP</a>'
-                )
-            )
-            print(
-            "\nIf the download link is unavailable in ESA Datalabs due to policy,"
-            )
+                    HTML(
+                        f"""
+                        <div style="
+                            padding:15px;
+                            border:2px solid #4CAF50;
+                            border-radius:8px;
+                            background-color:#F6FFF6;
+                            margin-top:10px;
+                            margin-bottom:10px;
+                        ">
+                        
+                        <h3 style="margin-top:0;">
+                            ✅ ZIP Created Successfully
+                        </h3>
 
-            print(
-    "       navigate to the folder in the jupyter-file browser or normal file manager and download the created zip manually."
-            )
+                        <p>
+                            <b>{len(selected_visits)} visit(s)</b> were added to the archive.
+                        </p>
+
+                        <p>
+                            <b>ZIP Location:</b><br>
+                            <code>{zip_path}</code>
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            <b>How to Download:</b>
+                        </p>
+
+                        <ol>
+                            <li>Open the <b>Jupyter File Browser</b>.</li>
+                            <li>Navigate to the folder containing the ZIP file.</li>
+                            <li>Locate the file shown above.</li>
+                            <li>Right-click the ZIP file.</li>
+                            <li>Select <b>Download</b>.</li>
+                        </ol>
+
+                        <p>
+                            <b>Note:</b> Direct browser downloads may be restricted in some
+                            ESA Datalabs deployments. If no download link is available,
+                            use the File Browser method described above.
+                        </p>
+
+                        </div>
+                        """
+                    )
+                )
 
     # Events        
     search_button.on_click(run_search)
