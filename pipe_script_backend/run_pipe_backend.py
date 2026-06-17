@@ -19,6 +19,11 @@ Path("/media/home/my_workspace/pipe_data").mkdir(
     parents=True,
     exist_ok=True
 )
+
+Path("/media/home/my_workspace/pipe_ref").mkdir(
+    parents=True,
+    exist_ok=True
+)
 sys.path.append("/media/pipe_script_backend")
 from PIPE.pipe import conf
 from PIPE.pipe import PipeParam, PipeControl
@@ -34,7 +39,7 @@ from pathlib import Path
 # 🔒 HARD-CODED REFERENCE PATH
 # ==========================================================
 
-ref_datapath = '/media/team_workspaces/CHEOPS-CNN/PIPE/Ref'
+ref_datapath = '/media/home/my_workspace/pipe_ref'
 
 conf.ref_lib_data = ref_datapath
 conf.ref_path = ref_datapath
