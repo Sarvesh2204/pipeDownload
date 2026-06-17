@@ -12,6 +12,8 @@ import pandas as pd
 from astropy.time import Time
 import matplotlib.pyplot as plt
 import os
+import sys
+sys.path.append("/media/pipe_script_backend")
 from PIPE.pipe import conf
 from PIPE.pipe import PipeParam, PipeControl
 import time
