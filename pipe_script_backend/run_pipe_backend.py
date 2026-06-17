@@ -12,8 +12,8 @@ import pandas as pd
 from astropy.time import Time
 import matplotlib.pyplot as plt
 import os
-from PIPE-main.pipe import conf
-from PIPE-main.pipe import PipeParam, PipeControl
+from PIPE.pipe import conf
+from PIPE.pipe import PipeParam, PipeControl
 import time
 import numpy as np
 import traceback
