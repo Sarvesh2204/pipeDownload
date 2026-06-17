@@ -42,8 +42,8 @@ def cache_dir():
 
 def get_conf_paths(overwrite=False):
 
-    DATA_ROOT = "/media/my-workspace/"
+    DATA_ROOT = "/media/home/my_workspace/pipe_data"
 
-    REF_LIB_PATH = "/media/my-workspace/Ref"
+    REF_LIB_PATH = "/media/home/my_workspace/pipe_ref"
 
     return DATA_ROOT, REF_LIB_PATH
