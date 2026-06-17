@@ -10,5 +10,5 @@ ipydatagrid
 ipyfilechooser
 ipysplitpanes
 matplotlib==3.8.4
-pipe-cheops == 1.1
+# pipe-cheops == 1.1
 numpy==1.26.4
