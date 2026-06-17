@@ -1,5 +1,4 @@
 pandas
-numpy==1.26.4
 joblib
 ipywidgets
 astropy
@@ -11,5 +10,5 @@ ipydatagrid
 ipyfilechooser
 ipysplitpanes
 matplotlib==3.8.4
-pipe-cheops
+pipe-cheops == 1.1
 numpy==1.26.4
