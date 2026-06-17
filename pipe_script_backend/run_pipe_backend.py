@@ -13,6 +13,12 @@ from astropy.time import Time
 import matplotlib.pyplot as plt
 import os
 import sys
+from pathlib import Path
+
+Path("/media/home/my_workspace/pipe_data").mkdir(
+    parents=True,
+    exist_ok=True
+)
 sys.path.append("/media/pipe_script_backend")
 from PIPE.pipe import conf
 from PIPE.pipe import PipeParam, PipeControl
