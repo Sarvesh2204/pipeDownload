@@ -18,8 +18,8 @@ from tqdm.auto import tqdm
 # drp_path
 # pipe_path
 
-DEFAULT_PIPE_PATH = "/data/user/che_pipe/Output_lc/visits"  # change to your real default
-DEFAULT_DRP_PATH = "/data/user/che_data_dev/rep"  # change to your real default
+DEFAULT_PIPE_PATH = "/data/che_pipe/Output_lc/visits"  # change to your real default
+DEFAULT_DRP_PATH = "/data/che_data_dev/rep"  # change to your real default
 
 
 from pathlib import Path
